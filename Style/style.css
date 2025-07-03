@@ -27,11 +27,6 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-header .navAvatar{
-    border-radius: 100%;
-    width: 90px;
-    height: 90px;
-}
 input{
     cursor: pointer;
 }
@@ -61,14 +56,18 @@ header nav ul{
     margin-left: 10rem;
     gap: 2rem;
 }
-header nav ul .light{
+header nav ul li{
     float: right;
     list-style: none;
 }
-header nav ul .dark{
-    display: none;
-    float: right;
-    list-style: none;
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+header nav ul li .active{
+    color: #118279;
+    font-weight: 600;
 }
 #introduction{
     height: 600px;
@@ -982,8 +981,44 @@ footer .copyright{
 }
 
 @media screen and (max-width: 1210px){
+    .mainContainer {
+        width: 900px;
+    }
+    .mainContainer .gridCustomers .influCard {
+        width: 200px;
+    }
+    #profile .editSocial, #profile .editVideo{
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+    #profile .editSocial{
+        width: 100%;
+    }
+    #profile .videoFlex{
+        width: 100%;
+    }
+    #profile textarea{
+         height: 120px;
+    }
+    #profile .editSocial .socialFlex input{
+        padding: 0;
+    }
+    #profile .horizontalVideo .videoFlex input{
+        padding: 0;
+        width: 100%;
+    }
+    #profile .horizontalVideo{
+        width: 100%;
+    }
+    #profile .editSocial .socialFlex input{
+        width: 100%;
+    }
     #profile .generalProfile{
         margin-right: 200px;
+    }
+    #profile .socialFlex{
+        width: 100%;
     }
     #profile{
         width: 900px;
@@ -1060,7 +1095,19 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 900px){
-    
+    .mainContainer{
+        width: 700px;
+    }
+    .mainContainer .categories{
+        width: 100%;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start;
+    }
+    .mainContainer .categories .card{
+        height: 270px;
+        text-align: center;
+    }
     #getStarted .card .terms{
         position: static;
     }
@@ -1138,25 +1185,30 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 832px){
+    .mainContainer{
+        width: 80%;
+    }
+    .mainContainer .gridCustomers {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .mainContainer .gridCustomers .influCard{
+        width: 100%;
+        padding: 0;
+        height: 350px;
+    }
     .openMenu {
         display: block;
         position: absolute;
         right: 40px;
         color: black;
     }
-    header nav ul .dark{
-    display:block;
-    float: right;
-    list-style: none;
-    }
-    header nav ul .light{
-    display: none;
-    }
      nav {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 10%;
+        width: 60%;
         height: 100vh;
         background-color: #118279;
         display: flex;
@@ -1172,12 +1224,11 @@ footer .copyright{
     header nav ul{
         margin: 5rem 0;
     }
-
-    nav ul li a img{
-        width: 40px;
-        height: 40px;
-        object-fit:contain;
+    header nav ul li a{
+        font-size: 30px;
+        color: white;
     }
+
     nav.active {
         right: 0;
     }
@@ -1223,6 +1274,9 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 650px){
+    #profile .editProfile input{
+        top: -4rem;
+    }
     #whyUs>div .columnTexts{
         justify-content: center;
         align-items: center;
@@ -1249,6 +1303,9 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 500px){
+    .mainContainer .gridCustomers{
+        grid-template-columns: 1fr;
+    }
     #profile a{
         right: 1rem;
     }
