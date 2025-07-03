@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./Assets/Images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>My Profile</title>
 </head>
@@ -15,15 +19,24 @@
         <a href="home.html">
             <img src="./Assets/Images/logo.svg" alt="Influzone Logo">
         </a>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
         <nav>
             <ul>
-                <li><a href="home.html"><img src="./Assets/Images/home.svg" alt="Home Icon"></a></li>
-                <li><a href="#"><img src="./Assets/Images/Notification.svg" alt="Notification Icon"></a></li>
-                <li><a href="#"><img src="./Assets/Images/job.svg" alt="Job Icon"></a></li>
-                <li><a href="#"><img src="./Assets/Images/chat.svg" alt="Chat Icon"></a></li>
+                <!--bydefault-->
+                <li class="light"><a href="home.html"><img src="./Assets/Images/home.svg" alt="Home Icon"></a></li>
+                <li class="light"><a href="#"><img src="./Assets/Images/Notification.svg" alt="Notification Icon"></a></li>
+                <li class="light"><a href="#"><img src="./Assets/Images/job.svg" alt="Job Icon"></a></li>
+                <li class="light"><a href="#"><img src="./Assets/Images/chat.svg" alt="Chat Icon"></a></li>
+                <!--For Burger Menu-->
+                <li class="dark"><a href="home.html"><img src="./Assets/Images/homel.svg" alt="Home Icon"></a></li>
+                <li class="dark"><a href="#"><img src="./Assets/Images/notl.svg" alt="Notification Icon"></a></li>
+                <li class="dark"><a href="#"><img src="./Assets/Images/jobkl.svg" alt="Job Icon"></a></li>
+                <li class="dark"><a href="#"><img src="./Assets/Images/chatl.svg" alt="Chat Icon"></a></li>
                 <img class="navAvatar" src="./Assets/Images/profile.jpg" alt="Profile picture">
             </ul>
+            <div class="closeMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
         </nav>
+        
                 
     </header>
     <section id="profile">
@@ -187,6 +200,22 @@
         </div>
         <p class="copyright">InfluZone © 2024 / All right reserved</p>
     </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const openMenu = document.querySelector('.openMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const nav = document.querySelector('nav');
+
+        openMenu.addEventListener('click', () => {
+        nav.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+        nav.classList.remove('active');
+        });
+    });
+    </script>
+
     <script src="./Assets/js/index.js"></script>
 </body>
 </html>
