@@ -1,0 +1,1158 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: white;
+    height: 100px;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+header .navAvatar{
+    width: 90px;
+    height: 90px;
+}
+input{
+    cursor: pointer;
+}
+.leftAligned{
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftAligned img{
+    top:20px;
+    left: 20rem;
+}
+
+header input{
+    background-color: #118279;
+    border: none;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Manrope", sans-serif;
+    height: 42px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    gap: 2rem;
+}
+header nav ul li{
+    float: right;
+    list-style: none;
+}
+#introduction{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Manrope", sans-serif;
+    background-image: url("../Assets/Images/Cover.jpg")
+}
+#introduction>div .middleTxt h2{
+    font-size: 30px;
+}
+#introduction>div .middleTxt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#introduction>div .middleTxt p{
+    font-size: 20px;
+}
+#introduction>div{
+    gap:40px;
+    position: absolute;
+    left: 10%;
+    margin-top: 100px;
+    justify-content: space-around;
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+}
+#introduction>div .middleTxt span{
+    color: #118279;
+}
+.horizontalCard{
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    width: 1200px;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.horizontalCard .influCard{
+    gap: 10px;
+    padding: 30px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.horizontalCard .influCard .social{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.horizontalCard .influCard .social img{
+    width: 30px;
+    height: 30px;
+}
+.horizontalCard .influCard .rate{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    background-color: #118279;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+}
+.horizontalCard .forUsers{
+    width: 800px;
+}
+.horizontalCard .forUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.reverse .forUsers{
+    text-align: end;
+}
+.horizontalCard .forUsers h1{
+    font-size: 30px;
+}
+.avatar{
+    object-fit: cover;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+#howItWorks{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Manrope", sans-serif;
+    background-image: url("../Assets/Images/Cover2.jpg")
+}
+#howItWorks div{
+    gap: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1200px;
+}
+#howItWorks span{
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+    color: #118279;
+}
+#howItWorks div .flexCards{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#howItWorks div .flexCards .cards{
+    height: 150px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    background-color: #118279;
+    border-radius: 20px;
+    padding: 3rem;
+}
+#howItWorks div .flexCards .cards img{
+    position: absolute;
+    top:-5rem;
+}
+#whyUs{
+    margin-top:2rem;
+    position: relative;
+}
+#whyUs>div{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+#whyUs .reversed{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+#whyUs .reversed .columnTexts{
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#whyUs>div .columnTexts{
+    font-family: 'Manrope', 'sans-serif';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+}
+#whyUs>div .columnTexts span{
+    color: #118279;
+}
+#whyUs>div .imageCarousel{
+    display: flex;
+    gap: 20px;
+    overflow:auto;
+    scroll-snap-type: x mandatory;
+}
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+}
+
+#whyUs>div .imageCarousel img{
+    scroll-snap-align: start;
+    height: 300px;
+    width: 500px;
+}
+#faqS{
+    font-family: 'Manrope', 'sans-serif';
+    width: 1200px;
+    margin: 2rem auto;
+}
+#faqS h1 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    text-align: center;
+}
+.accordion {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion img{
+    width: 40px;
+}
+#faqS .active, .accordion:hover {
+    background-color: #118279;
+    color: #fff;
+}
+.panel {
+    font-size: 20px;
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    padding: 30px;
+}
+.arrow {
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+footer{
+    position: relative;
+    padding: 5rem 0;
+    color: white;
+    font-family: "Manrope", "sans-serif";
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #118279;
+}
+footer nav ul li{
+    list-style: none;
+}
+footer nav ul li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+footer .companyCard{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+footer .companyCard img{
+    width: 200px;
+}
+footer .social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 22px;
+}
+footer .copyright{
+    position: absolute;
+    bottom: 1rem;
+    font-weight: 200;
+}
+#getStarted{
+    font-family: "Manrope", "sans-serif";
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#getStarted img{
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+}
+#getStarted .card{
+    padding: 2rem 0;
+    margin-top: 8rem;
+    gap: 3rem;
+    left: 28%;
+    flex-direction: column;
+    z-index: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: white;
+    top:0;
+    position: absolute;
+    display: flex;
+}
+#getStarted .margined{
+    margin-top: 15rem;
+}
+#getStarted .card span{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #118279;
+    color: white;
+    font-size: 30px;
+}
+#getStarted .card p{
+    text-align: center;
+    width: 400px;
+    font-size: 25px;
+}
+#getStarted .card>img{
+    width: 500px;
+}
+#getStarted .card div{
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    display: flex;
+}
+#getStarted .card div .signCard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#getStarted .card div .signCard span{
+    width: 120px;
+    font-size: 20px;
+}
+#getStarted .card div .signCard img{
+    width: 70px;
+}
+#getStarted .card a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #118279;
+    padding: 0;
+    margin: 0;
+}
+#getStarted .card input{
+    background-color: #118279;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+#getStarted .card .inputs{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#getStarted .card .inputs input{
+    font-weight: 100;
+    font-family: "Manrope", "sans-serif";
+    padding-left: 1rem;
+    color: black;
+    background-color: #F7F7F7;
+    border: 0.5px solid #118279;
+}
+#getStarted .card .forgotP{
+    position: absolute;
+    bottom: 15.5rem;
+    left: 2.5rem;
+}
+#getStarted .card .terms{
+    position: absolute;
+    bottom: 11rem;
+    left: 2.5rem;
+}
+#getStarted .card .hTutorial{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#getStarted .card .hTutorial img{
+    width: 50px;
+    height: 50px;
+}
+#getStarted .card .hTutorial p{
+    font-size: 20px;
+    text-align: left;
+}
+#getStarted .card h2{
+    font-size: 30px;
+}
+#getStarted .card .wbutton{
+    background-color: white;
+    color: #118279;
+    border: 0.5px solid #118279;
+}
+#visit-time {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 50px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+#profile{
+    font-size: 20px;
+    font-family: "Manrope", "sans-serif";
+    position: relative;
+    margin: 4rem auto;
+    width: 1200px;
+}
+#profile .horizontalProfile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#profile .horizontalProfile .avatarPic{
+    width: 250px;
+    height: 250px;
+}
+#profile .horizontalProfile .avatarPic>img{
+    object-fit: cover;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+#profile .generalProfile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    gap: 0.5rem;
+}
+#profile .generalProfile span{
+    color: #118279;
+}
+#profile .editProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 1rem;
+}
+#profile .editProfile input{
+    right: 1rem;
+    position: absolute;
+    top:0;
+    background-color: #118279;
+    border: none;
+    color: white;
+    width: 100px;
+    font-size: 20px;
+    font-family: "Manrope", sans-serif;
+    height: 42px;
+}
+#profile  .editProfile div{
+    justify-content: flex-end;
+    display: flex;
+    gap:1rem;
+}
+#profile  .editProfile div>img{
+    width: 20px;
+    height: 20px;
+}
+#profile .info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#profile .horizontalVideo{
+    gap: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#profile a{
+    text-decoration: none;
+    color: #118279;
+}
+#profile .horizontalVideo .videoFlex{
+    display: flex;
+    justify-content: space-between;
+}
+#profile .services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+#profile .services .serviceCards{
+    display: flex;
+    justify-content: space-between;
+}
+#profile .services .serviceCards .card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#profile .services .serviceCards .card h2{
+    text-align: center;
+    color: #118279;
+}
+#profile .services .serviceCards .medium h2{
+    text-align: center;
+    color: #D36E2B;
+}
+#profile .services .serviceCards .premium h2{
+    text-align: center;
+    color: #7F1182;
+}
+#profile .services .serviceCards .card h3{
+    padding-left: 10px;
+    font-weight: 500;
+}
+#profile .services .serviceCards .card p{
+    text-align: center;
+}
+#profile .services .serviceCards .card span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #118279;
+    width: 100%;
+    height: 50px;
+}
+#profile .services .serviceCards .medium span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #D36E2B;
+    width: 100%;
+    height: 50px;
+}
+#profile .services .serviceCards .premium span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #7F1182;
+    width: 100%;
+    height: 50px;
+}
+#profile .services .serviceCards .card div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#profile .generalProfile select{
+    appearance: none;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+#profile .editVideo{
+    border: none;
+    justify-content: flex-start;
+    gap: 2.3rem;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+}
+#profile .editSocial{
+    border: none;
+    justify-content: flex-start;
+    gap: 2.3rem;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+}
+#profile .editSocial .socialFlex input{
+    width: 200px;
+    height: 30px;
+    font-weight: 100;
+    font-family: "Manrope", "sans-serif";
+    padding-left: 1rem;
+    color: black;
+    background-color: #F7F7F7;
+    border: 0.5px solid #118279;
+}
+#profile .horizontalVideo .videoFlex input{
+    width: 300px;
+    height: 30px;
+    font-weight: 100;
+    font-family: "Manrope", "sans-serif";
+    padding-left: 1rem;
+    color: black;
+    background-color: #F7F7F7;
+    border: 0.5px solid #118279;
+}
+#profile .services #checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+.container{
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 80px auto 30px;
+}
+.select-btn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.select-btn .btn-text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+.select-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #118279;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.select-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.list-items {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.select-btn.open ~ .list-items{
+    display: block;
+}
+.list-items .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.list-items .item:hover{
+    background-color: #e7edfe;
+}
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .checkbox{
+    background-color: #4070f4;
+    border-color: #4070f4;
+}
+.checkbox .check-icon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+.item.checked .check-icon{
+    transform: scale(1);
+}
+.custom-file-upload{
+    position: absolute;
+    left: 0;
+}
+.mainContainer{
+    font-family: "Manrope", "sans-serif";
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.mainContainerFlex{
+    font-family: "Manrope", "sans-serif";
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    width: 1300px;
+    margin: 0 auto;
+}
+.mainContainerFlex #twoCol{
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 5rem;
+}
+.mainContainerFlex #twoCol .influCard{
+    width: 300px;
+    height: 300px;
+}
+.mainContainer .search{
+    font-family: 'Manrope', 'sans-serif';
+    width: 100%;
+    gap: 1rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mainContainer .search input{
+    font-size: 20px;
+    width: 80%;
+    height: 40px;
+    font-weight: 100;
+    font-family: "Manrope", "sans-serif";
+    padding-left: 1rem;
+    color: black;
+    background-color: #F7F7F7;
+    border: 0.5px solid #118279;
+}
+
+.mainContainer .search button{
+    font-family: 'Manrope', 'sans-serif';
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #118279;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.mainContainer .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainContainer .heading a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #118279;
+}
+.mainContainer .categories{
+    margin-top: 2rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+.mainContainer .categories .card{
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    background-color: #118279;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContainer .gridCustomers{
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.mainContainer .gridCustomers a{
+    color: black;
+}
+.mainContainer .gridCustomers .influCard{
+    gap: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.mainContainer .gridCustomers .influCard .social{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mainContainer .gridCustomers .influCard .social img{
+    width: 30px;
+    height: 30px;
+}
+.mainContainer .gridCustomers .influCard .rate{
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    background-color: #118279;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+}
+.mainContainer .materials{
+    margin-top: 2rem;
+    display: flex;
+    width: 300px;
+    gap: 2rem;
+    flex-direction: column;
+}
+.mainContainer .materials .search{
+    display: flex;
+    width: 100%;
+}
+.mainContainer .materials .search input[type=search]{
+    width: 80%;
+}
+.mainContainer .materials .search input[type=submit]{
+    color: #118279;
+    width: 20%;
+    text-align: center;
+    padding: 0;
+}
+.mainContainer .materials .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainContainer .materials .social img{
+    width: 40px;
+}
+.mainContainer .materials .categories{
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .materials .categories input{
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid #118279;
+    background-color: white;
+    font-family: 'Manrope', 'sans-serif';
+    font-size: 18px;
+    color: #118279;
+}
+.mainContainer .materials .categories input:hover{
+    background-color: #118279;
+    color: white;
+}
+
+@media screen and (max-width: 1210px){
+    #getStarted{
+        width: 100%;
+    }
+    .horizontalCard{
+        width: 900px;
+    }
+    #howItWorks div{
+        width: 900px;
+    }
+    #howItWorks div .flexCards .cards{
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    #whyUs>div {
+        width: 900px;
+    }
+    #faqS{
+        width: 900px;
+    }
+}
+@media screen and (max-width: 980px){
+    #getStarted .card{
+        left: 25%;
+    }
+    #introduction>div{
+        width: 100%;
+        left: 0;
+    }
+}
+@media screen and (max-width: 900px){
+    
+    #getStarted .card .terms{
+        position: static;
+    }
+    #getStarted .card{
+        margin-top: 0;
+    }
+    #getStarted .margined{
+        margin-top: 0;
+    }
+    #getStarted .card>img{
+        width: 250px;
+    }
+    #getStarted .card span{
+        width: 90%;
+    }
+    .leftAligned{
+        justify-self: center;
+        align-items: center;
+    }
+    #getStarted .card{
+        width: 100%;
+        left: 0;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+    .leftAligned img{
+        position: static;
+    }
+    #getStarted>img{
+        display: none;
+    }
+    #howItWorks div .flexCards .cards{
+        padding: 0 1rem;
+        height: 400px;
+    }
+    .horizontalCard{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .horizontalCard .forUsers{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .reverse .forUsers{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #howItWorks{
+        height: 100%;
+    }
+    #howItWorks div{
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    #howItWorks div .flexCards{
+        gap: 5rem;
+        flex-direction: column;
+    }
+    #howItWorks div .flexCards .cards img{
+        position: static;
+    }
+    #whyUs>div{
+        width: 90%;
+    }
+    #faqS{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 832px){
+    #introduction img{
+        display: none;
+    }
+    footer .companyCard{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 650px){
+    #whyUs>div .columnTexts{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #whyUs span{
+        text-align: center;
+    }
+    #whyUs>div{
+        text-align: center;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+    #whyUs .reversed{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #whyUs .reversed .columnTexts{
+        text-align: center;
+        width:100%;
+    }
+}
+@media screen and (max-width: 500px){
+    #getStarted {
+        width: 90%;
+    }
+    header input{
+        width: 130px;
+    }
+    .horizontalCard .influCard{
+        padding: 0;
+    }
+    footer .companyCard{
+        width: 90%;
+    }
+    #whyUs>div .imageCarousel{
+        width: 250px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    #getStarted .card h2{
+        text-align: center;
+    }
+    #getStarted .card .hTutorial h2{
+        text-align: center;
+    }
+    #getStarted .card .hTutorial p{
+        text-align: center;
+    }
+    #getStarted .card p{
+        width: 100%;
+    }
+    #getStarted .card div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #getStarted .card input{
+        width: 250px;
+    }
+}
