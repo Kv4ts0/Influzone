@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./Assets/Images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>F.A.Qs</title>
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="./Assets/Images/logo.svg" alt="Influzone Logo">
+        </a>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li ><a href="home.html">Home</a></li>
+                <li ><a href="#">Notification</a></li>
+                <li ><a href="#">My Jobs</a></li>
+                <li ><a href="#">Chats</a></li>
+                <li ><a href="iprofile.html">My account</a></li>
+            </ul>
+            <div class="closeMenu"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </nav>
+                
+    </header>
+    <section id="faqS">
+        <h1>F.A.Qs</h1>
+        <button class="accordion">What is Influzone <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>InfluZone is a platform that connects businesses with influencers for advertising opportunities. Businesses can find influencers to promote their products or services, and influencers can browse offers from businesses.</p>
+        </div>
+        <button class="accordion">How do I create an account? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>To create an account on InfluZone, follow these steps: 1. Go to the InfluZone website. 2. Click on get started. 3.follow steps. 4. finally verify your profile</p>
+        </div>
+        <button class="accordion">Can Anyone join InfluZone? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>Yes, both influencers and businesses can sign up. However, users must follow InfluZone’s terms and conditions , which prohibit offensive language and fraud.</p>
+        </div>
+        <button class="accordion">How do influencers and businesses connect? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>On InfluZone, both influencers and businesses can share their profile. This means that Influencers can show their own offers, allowing businesses to find and collaborate with them. Businesses can also show advertising opportunities for influencers to apply. Once an agreement is made, they can communicate and work together directly.</p>
+        </div>
+        <button class="accordion">Does InfluZone handle payments? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>Currently, InfluZone does not process payments between influencers and businesses, but payment handling may be introduced in the future. You can see detail in terms and policy.</p>
+        </div>
+        <button class="accordion">What data does InfluZone collect? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>When registering, users provide: - Name and surname (for identification) - Email (for account verification and communication) – Password (for secure login) - Birth date (to ensure compliance with platform requirements) and after verification social media information from your account.</p>
+        </div>
+        <button class="accordion">Is my personal data secure? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>Yes, your data is used only for account creation and email verification. InfluZone does not share your personal information without consent.</p>
+        </div>
+        <button class="accordion">What happens if I violate the rules? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>InfluZone has strict policies against offensive content and fraud. Violating these rules can result in account suspension or termination</p>
+        </div>
+        <button class="accordion">How can I contact support? <img class="arrow" src="./Assets/Images/arrow.svg" alt="Arrow Icon"></button>
+        <div class="panel">
+            <p>If you need help, you can click Ask a question</p>
+        </div>
+    </section>
+    <footer>
+        <div class="companyCard">
+            <img src="./Assets/Images/logoDark.svg" alt="Logo for dark mode">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="influencers.html">Influencers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="#">My Jobs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="faqs.html">F.A.Qs</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <p>Social</p>
+            <div class="socialFlex">
+                <img src="./Assets/Images/facebooklight.svg" alt="Facebook light logo">
+                <img src="./Assets/Images/Instalight.svg" alt="Instagram light logo">
+                <img src="./Assets/Images/tiktoklight.svg" alt="Tiktok light logo">
+                <img src="./Assets/Images/linkedin.svg" alt="Linkedin light logo">
+            </div>
+        </div>
+        <p class="copyright">InfluZone © 2024 / All right reserved</p>
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const openMenu = document.querySelector('.openMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const nav = document.querySelector('nav');
+
+        openMenu.addEventListener('click', () => {
+        nav.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+        nav.classList.remove('active');
+        });
+    });
+    </script>
+    <script src="./Assets/js/index.js"></script>
+</body>
+</html>
