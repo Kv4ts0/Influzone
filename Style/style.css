@@ -1349,6 +1349,9 @@ footer .copyright{
         flex-direction: column;
         gap: 2rem;
     }
+    #getStarted .card input{
+        width: 250px;
+    }
 }
 @media screen and (max-width: 400px){
     #getStarted .card h2{
@@ -1363,7 +1366,5 @@ footer .copyright{
     #getStarted .card p{
         width: 100%;
     }
-    #getStarted .card input{
-        width: 250px;
-    }
+
 }
