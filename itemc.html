@@ -85,6 +85,21 @@
         </div>
         <p class="copyright">InfluZone © 2024 / All right reserved</p>
     </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const openMenu = document.querySelector('.openMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const nav = document.querySelector('nav');
+
+        openMenu.addEventListener('click', () => {
+        nav.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+        nav.classList.remove('active');
+        });
+    });
+    </script>
     <script src="./Assets/js/index.js"></script>
 </body>
 </html>
