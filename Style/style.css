@@ -1344,6 +1344,12 @@ footer .copyright{
     }
 
 }
+@media screen and (max-width: 430px){
+    #getStarted .card div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
 @media screen and (max-width: 400px){
     #getStarted .card h2{
         text-align: center;
@@ -1356,10 +1362,6 @@ footer .copyright{
     }
     #getStarted .card p{
         width: 100%;
-    }
-    #getStarted .card div{
-        flex-direction: column;
-        gap: 2rem;
     }
     #getStarted .card input{
         width: 250px;
