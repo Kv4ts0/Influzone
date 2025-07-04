@@ -314,6 +314,7 @@ header nav ul li .active{
   transform: rotate(90deg);
 }
 footer{
+    margin-top: 7rem;
     position: relative;
     padding: 5rem 0;
     color: white;
@@ -816,7 +817,7 @@ footer .copyright{
     align-items: center;
     margin-top: 8rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: auto;
     gap: 5rem;
 }
 .mainContainerFlex #twoCol .influCard{
@@ -979,8 +980,16 @@ footer .copyright{
     background-color: #118279;
     color: white;
 }
+@media screen and (max-width: 1366px){
+    .mainContainerFlex{
+        width: 90%;
+    }
 
+}
 @media screen and (max-width: 1210px){
+    .mainContainerFlex #twoCol{
+        grid-template-columns: 1fr;
+    }
     .mainContainer {
         width: 900px;
     }
@@ -1185,6 +1194,15 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 832px){
+    .mainContainerFlex #twoCol,.mainContainerFlex #twoCol .influCard{
+        width: 100%;
+    }
+    .mainContainer .materials{
+        width: 100%;
+    }
+    .mainContainerFlex{
+        flex-direction: column;
+    }
     .mainContainer{
         width: 80%;
     }
