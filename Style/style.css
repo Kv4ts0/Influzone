@@ -980,6 +980,9 @@ footer .copyright{
     background-color: #118279;
     color: white;
 }
+#profile .companyProfile{
+    margin-right: 5rem;
+}
 @media screen and (max-width: 1366px){
     .mainContainerFlex{
         width: 90%;
@@ -1026,6 +1029,9 @@ footer .copyright{
     #profile .generalProfile{
         margin-right: 200px;
     }
+    #profile .companyProfile{
+        margin-right: 2px;
+    }
     #profile .socialFlex{
         width: 100%;
     }
@@ -1054,6 +1060,14 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 980px){
+    #profile .companyProfile{
+        margin-right: 0;
+    }
+    
+    #profile .editProfile{
+        justify-content: center;
+        align-items: center;
+    }
     #profile{
         width: 90%;
     }
@@ -1349,10 +1363,9 @@ footer .copyright{
         flex-direction: column;
         gap: 2rem;
     }
-    #getStarted .card input{
-        width: 250px;
-    }
+
 }
+
 @media screen and (max-width: 400px){
     #getStarted .card h2{
         text-align: center;
@@ -1366,5 +1379,7 @@ footer .copyright{
     #getStarted .card p{
         width: 100%;
     }
-
+    #getStarted .card input{
+        width: 250px;
+    }
 }
