@@ -1118,6 +1118,13 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 900px){
+    #getStarted .card{
+        gap: 1rem;
+    }
+    #getStarted .card .forgotP{
+        position: static;
+        left: 0;
+    }
     .mainContainer{
         width: 700px;
     }
